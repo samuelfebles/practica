@@ -6,7 +6,16 @@ namespace practica
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            User currentUser = new User();
+            Console.WriteLine("Please insert your name: ");
+            currentUser.username = Console.ReadLine();
+            Console.WriteLine("Now insert a new password!: ");
+            currentUser.password = Console.ReadLine();
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("Welcome {0} great job!.", currentUser.username);
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++++");
+
+
         }
     }
 }
